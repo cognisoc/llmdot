@@ -1,0 +1,70 @@
+site_name: llmdot
+site_description: Run local GGUF language models from .NET — one package, one format, one programming model.
+site_url: https://docs.cognisoc.com/llmdot/
+docs_dir: docs
+site_dir: site
+
+repo_url: https://github.com/cognisoc/llmdot
+repo_name: cognisoc/llmdot
+edit_uri: edit/main/documentation/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Overview: index.md
+  - Getting Started: getting-started.md
+  - Installation: install.md
+  - Model Loading: model-loading.md
+  - API Surface: api.md
+  - GPU Backends: gpu-backends.md
+  - CLI: cli.md
+  - Microsoft.Extensions.AI: extensions-ai.md
+  - Architecture: architecture.md
+  - Supported Models: supported-models.md
+  - Roadmap & Status: status.md
