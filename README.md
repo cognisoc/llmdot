@@ -4,13 +4,15 @@
 
 [![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![NuGet](https://img.shields.io/badge/nuget-preview-004880?logo=nuget&logoColor=white)](#)
-[![Build](https://img.shields.io/badge/build-in%20development-orange)](#)
+[![NuGet](https://img.shields.io/nuget/v/Llmdot.Core)](https://www.nuget.org/packages/Llmdot.Core)
+[![Build](https://github.com/cognisoc/llmdot/actions/workflows/ci.yml/badge.svg)](https://github.com/cognisoc/llmdot/actions)
 [![GGUF](https://img.shields.io/badge/format-GGUF-8A2BE2)](https://github.com/ggerganov/ggml/blob/master/docs/gguf.md)
 [![AOT](https://img.shields.io/badge/NativeAOT-friendly-success)](https://learn.microsoft.com/dotnet/core/deploying/native-aot/)
 [![Status](https://img.shields.io/badge/status-pre--alpha-red)](doc/roadmap.md)
 
 *A .NET-native local inference runtime for GGUF language models. CPU-first. Managed-by-default. Idiomatic. Trimming- and NativeAOT-friendly.*
+
+**[Website](https://llmdot.cognisoc.com)** · **[Docs](https://docs.cognisoc.com/llmdot/)** · **[NuGet](https://www.nuget.org/packages/Llmdot.Core)**
 
 [Vision](doc/vision.md) • [Architecture](doc/architecture.md) • [Roadmap](doc/roadmap.md) • [Platform Strategy](doc/platform-strategy.md) • [Model Reference](doc/model-architectures.md)
 
@@ -241,3 +243,20 @@ Contribution areas most valuable right now:
 ## License
 
 MIT. See [LICENSE](LICENSE) for details.
+
+---
+
+## Part of the Cognisoc stack
+
+**[Cognisoc](https://www.cognisoc.com)** builds open-source LLM inference for every language and every device — *LLM inference, everywhere.* This project is one of six:
+
+| Project | Language | What it does |
+|---|---|---|
+| [mullama](https://github.com/cognisoc/mullama) | Python · Node · Go · PHP · Rust · C | Local LLM runtime & server, drop-in Ollama alternative |
+| [unillm](https://github.com/cognisoc/unillm) | Rust | Modular inference runtime, 47 architectures |
+| [llamafu](https://github.com/cognisoc/llamafu) | Dart / Flutter | On-device inference for mobile apps |
+| llmdot **(this project)** | C# / .NET | Local GGUF inference for the .NET ecosystem |
+| [cllm](https://github.com/cognisoc/cllm) | C | Bare-metal unikernel — boots straight into inference |
+| [zigllm](https://github.com/cognisoc/zigllm) | Zig | Learn LLMs by building one, from tensors to text |
+
+🌐 [cognisoc.com](https://www.cognisoc.com) · 📚 [docs.cognisoc.com](https://docs.cognisoc.com) · 🐙 [github.com/cognisoc](https://github.com/cognisoc)
